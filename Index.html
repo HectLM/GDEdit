@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GDEdit</title>
+	<link rel="icon" type="image" href="cp.jfif">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,8 +18,21 @@
     </div>
 
     <div id="build" class="tab">
-        <button onclick="addObject('cube')">Add Cube</button>
-        <button onclick="addObject('triangle')">Add Triangle</button>
+		<button onclick="addObject('cube')">Add Cube</button>
+		<button onclick="addObject('slab')">Add Slab</button>
+		<button onclick="addObject('slope1')">Add Steep Slope</button>
+		<button onclick="addObject('slope2')">Add Gradual Slope</button>
+		<button onclick="addObject('orb-yellow')">Add Yellow Orb</button>
+		<button onclick="addObject('orb-red')">Add Red Orb</button>
+		<button onclick="addObject('orb-pink')">Add Pink Orb</button>
+		<button onclick="addObject('orb-blue')">Add Blue Orb</button>
+		<button onclick="addObject('orb-green')">Add Green Orb</button>
+		<button onclick="addObject('orb-black')">Add Black Orb</button>
+		<button onclick="addObject('pad-yellow')">Add Yellow Pad</button>
+		<button onclick="addObject('pad-red')">Add Red Pad</button>
+		<button onclick="addObject('pad-pink')">Add Pink Pad</button>
+		<button onclick="addObject('pad-blue')">Add Blue Pad</button>
+		<button onclick="addObject('triangle')">Add Triangle</button>
     </div>
 
     <div id="edit" class="tab">
@@ -41,10 +55,19 @@
         <button onclick="clearCanvas()">Clear All</button>
     </div>
 
-    <div class="sidebar-controls">
-        <button onclick="copyPaste()">Copy & Paste</button>
-        <button onclick="deselectObject()">Deselect Object</button>
-    </div>
+    <div class="left-sidebar">
+		<button onclick="saveLevel(1)">Save Slot 1</button>
+		<button onclick="loadLevel(1)">Load Slot 1</button>
+		<button onclick="saveLevel(2)">Save Slot 2</button>
+		<button onclick="loadLevel(2)">Load Slot 2</button>
+		<button onclick="saveLevel(3)">Save Slot 3</button>
+		<button onclick="loadLevel(3)">Load Slot 3</button>
+	</div>
+
+	<div class="sidebar-controls">
+		<button onclick="copyPaste()">Copy & Paste</button>
+		<button onclick="deselectObject()">Deselect Object</button>
+	</div>
 
     <script src="editor.js"></script>
 </body>
