@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDEdit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Geometry Dash Level Editor</h1>
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <div class="tab-container">
+        <button onclick="switchTab('build')">Build</button>
+        <button onclick="switchTab('edit')">Edit</button>
+        <button onclick="switchTab('delete')">Delete</button>
+    </div>
+
+    <div id="build" class="tab">
+        <button onclick="addObject('cube')">Add Cube</button>
+        <button onclick="addObject('triangle')">Add Triangle</button>
+    </div>
+
+    <div id="edit" class="tab">
+        <button onclick="rotateObject()">Rotate</button>
+        <button onclick="changeColor()">Change Color</button>
+        <button onclick="copyPaste()">Copy & Paste</button>
+        <button onclick="deselectObject()">Deselect</button>
+        <button onclick="moveSelectedObject(0, -1)">Up</button>
+        <button onclick="moveSelectedObject(0, 1)">Down</button>
+        <button onclick="moveSelectedObject(-1, 0)">Left</button>
+        <button onclick="moveSelectedObject(1, 0)">Right</button>
+        <button onclick="moveSelectedObject(5, 0)">Right 5</button>
+        <button onclick="moveSelectedObject(0, -5)">Up 5</button>
+        <button onclick="moveSelectedObject(-5, 0)">Left 5</button>
+        <button onclick="moveSelectedObject(0, 5)">Down 5</button>
+    </div>
+
+    <div id="delete" class="tab">
+        <button onclick="deleteObject()">Delete</button>
+        <button onclick="clearCanvas()">Clear All</button>
+    </div>
+
+    <div class="sidebar-controls">
+        <button onclick="copyPaste()">Copy & Paste</button>
+        <button onclick="deselectObject()">Deselect Object</button>
+    </div>
+
+    <script src="editor.js"></script>
+</body>
+</html>
