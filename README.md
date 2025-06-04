@@ -9,7 +9,8 @@ GDEdit is a **simple and interactive level editor** designed for Geometry Dash e
 - **Keyboard Controls:** WASD for movement (Shift for fast movement)  
 - **Copy & Paste:** Instantly duplicate objects  
 - **Tabs for Organization:** Build, Edit, and Delete sections  
-- **Sidebar Controls:** Always-visible Copy & Paste and Deselect buttons  
+- **Many Objects:** Build using Blocks, spikes, orbs, pads and more!
+- **Save Slots:** Save your creations to one of three save slots!
 
 ## Getting Started
 1. Clone this repository:
