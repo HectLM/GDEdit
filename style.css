@@ -84,5 +84,5 @@ button:hover {
 }
 
 button {
-    display: inline-block; /* Ensures buttons are visible */
+    display: inline-block;
 }
